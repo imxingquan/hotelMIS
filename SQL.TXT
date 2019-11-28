@@ -1,0 +1,519 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.3-pl1
+-- http://www.phpmyadmin.net
+-- 
+-- 主机: localhost:3306
+-- 生成日期: 2006 年 04 月 13 日 09:23
+-- 服务器版本: 4.1.13
+-- PHP 版本: 5.0.5
+-- 
+-- 数据库: `hotelmis`
+-- 
+CREATE DATABASE `hotelmis` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE hotelmis;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_account`
+-- 
+
+CREATE TABLE `t_account` (
+  `account_id` varchar(20) NOT NULL default '',
+  `room_id` int(11) default NULL,
+  `table_id` int(11) default NULL,
+  `cust_date` date default NULL,
+  `cust_time` time default NULL,
+  `pay_date` date default NULL,
+  `pay_time` time default NULL,
+  `subscription` float default '0',
+  `yscost` float default '0',
+  `erase_zero` float default '0',
+  `zhekou` float default '0',
+  `reckoning` int(1) default '0',
+  `sscost` float default '0',
+  `daijin` float default '0',
+  `sj` float default '0',
+  `zy` float default '0',
+  `acc_status` int(1) default '0',
+  `ck_name` varchar(20) default '',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_accountdetails`
+-- 
+
+CREATE TABLE `t_accountdetails` (
+  `id` bigint(11) NOT NULL auto_increment,
+  `account_id` varchar(20) default NULL,
+  `food_id` int(11) default '0',
+  `food_name` varchar(20) default NULL,
+  `food_num` int(11) default NULL,
+  `food_price` float default NULL,
+  `food_unit` varchar(10) default '',
+  `food_cancel_msg` varchar(100) default '',
+  `ck_name` varchar(10) default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `index_accound_id` (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_admin`
+-- 
+
+CREATE TABLE `t_admin` (
+  `ad_id` int(11) NOT NULL auto_increment,
+  `ad_log_name` varchar(10) NOT NULL default '',
+  `ad_passwd` varchar(10) default NULL,
+  `optype` varchar(10) default NULL,
+  `ad_desc` varchar(100) default NULL,
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`ad_id`,`ad_log_name`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_arrerage`
+-- 
+
+CREATE TABLE `t_arrerage` (
+  `ar_id` bigint(20) NOT NULL default '0',
+  `account_id` varchar(20) NOT NULL default '',
+  `ar_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_arrerage_zh`
+-- 
+
+CREATE TABLE `t_arrerage_zh` (
+  `ar_id` bigint(11) NOT NULL auto_increment,
+  `guest_name` varchar(10) default NULL,
+  `guest_phone` varchar(20) default NULL,
+  `guest_dept` varchar(100) default '',
+  `guest_rest` float default '0',
+  `ar_memo` text,
+  PRIMARY KEY  (`ar_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_destine`
+-- 
+
+CREATE TABLE `t_destine` (
+  `ID` bigint(20) NOT NULL auto_increment,
+  `guest_name` varchar(10) default NULL,
+  `guest_phone` varchar(100) default '',
+  `come_date` date default NULL,
+  `come_time` time default NULL,
+  `person_num` int(11) default NULL,
+  `subscription` float default NULL,
+  `bdisp` int(1) NOT NULL default '1',
+  `remark` varchar(50) default NULL,
+  PRIMARY KEY  (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_employee`
+-- 
+
+CREATE TABLE `t_employee` (
+  `emp_id` varchar(20) NOT NULL default '',
+  `emp_name` varchar(10) default NULL,
+  `emp_sex` varchar(4) default NULL,
+  `emp_job_id` int(11) default NULL,
+  `emp_job_name` varchar(50) default '',
+  `emp_phone` varchar(20) default NULL,
+  `emp_photo` varchar(50) default NULL,
+  `emp_birth` date default NULL,
+  `emp_address` varchar(50) default NULL,
+  `emp_demo` varchar(100) default NULL,
+  PRIMARY KEY  (`emp_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_foodkind`
+-- 
+
+CREATE TABLE `t_foodkind` (
+  `kind_id` int(11) NOT NULL auto_increment,
+  `kind_name` varchar(50) default NULL,
+  `kind_flag` int(11) default NULL,
+  `kind_ts` int(11) default NULL,
+  PRIMARY KEY  (`kind_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_hotelmsg`
+-- 
+
+CREATE TABLE `t_hotelmsg` (
+  `hotelname` varchar(100) default '',
+  `hoteltel` varchar(50) default '',
+  `hoteltel2` varchar(50) default '',
+  `hotelhttp` varchar(50) default ''
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_job_set`
+-- 
+
+CREATE TABLE `t_job_set` (
+  `job_id` int(11) NOT NULL auto_increment,
+  `job_name` varchar(20) default NULL,
+  PRIMARY KEY  (`job_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_menuinfo`
+-- 
+
+CREATE TABLE `t_menuinfo` (
+  `food_id` int(11) NOT NULL auto_increment,
+  `kind_id` int(11) NOT NULL default '0',
+  `food_name` varchar(50) default NULL,
+  `food_price` float default '0',
+  `food_num` int(11) NOT NULL default '1',
+  `food_unit` varchar(10) default NULL,
+  `repertory_flag` int(1) default '0',
+  `food_cook` int(2) default '-1',
+  `ck_name` varchar(10) default NULL,
+  PRIMARY KEY  (`food_id`,`kind_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_opright`
+-- 
+
+CREATE TABLE `t_opright` (
+  `optype` varchar(10) NOT NULL default '',
+  `module_no` varchar(10) NOT NULL default '',
+  `haveright` int(11) default NULL,
+  PRIMARY KEY  (`optype`,`module_no`),
+  UNIQUE KEY `Index_1` (`optype`,`module_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_outstore`
+-- 
+
+CREATE TABLE `t_outstore` (
+  `out_id` int(11) NOT NULL auto_increment,
+  `food_id` int(11) default NULL,
+  `food_name` varchar(50) default NULL,
+  `out_num` int(11) default NULL,
+  `out_price` float default NULL,
+  `out_unit` varchar(10) default NULL,
+  `out_date` date default NULL,
+  `out_flag` varchar(100) default '0',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`out_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_repast`
+-- 
+
+CREATE TABLE `t_repast` (
+  `account_id` varchar(20) NOT NULL default '',
+  `table_id` int(11) default '0',
+  `cust_date` date default NULL,
+  `cust_time` time default NULL,
+  `room_id` int(11) default '0',
+  `re_state` int(11) default NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_repdetails`
+-- 
+
+CREATE TABLE `t_repdetails` (
+  `id` int(11) unsigned NOT NULL default '0',
+  `account_id` varchar(20) NOT NULL default '',
+  `food_id` int(11) default '0',
+  `food_name` varchar(50) default NULL,
+  `food_num` int(11) default NULL,
+  `food_price` float default NULL,
+  `food_unit` varchar(10) default '',
+  `food_cook` int(2) default '-1',
+  `food_cancel_msg` varchar(100) default '',
+  `ck_name` varchar(10) default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `index_account_id` (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_repertory`
+-- 
+
+CREATE TABLE `t_repertory` (
+  `rep_id` int(11) NOT NULL auto_increment,
+  `food_id` int(11) default NULL,
+  `food_name` varchar(50) default NULL,
+  `rep_num` int(11) default NULL,
+  `rep_price` float default NULL,
+  `unit` varchar(10) default NULL,
+  `rep_date` date default NULL,
+  `rep_flag` int(11) default '0',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`rep_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_repertory_total`
+-- 
+
+CREATE TABLE `t_repertory_total` (
+  `food_id` int(11) NOT NULL default '0',
+  `rep_num` int(11) default '0',
+  PRIMARY KEY  (`food_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_roomset`
+-- 
+
+CREATE TABLE `t_roomset` (
+  `room_id` int(3) NOT NULL default '0',
+  `room_name` varchar(50) default NULL,
+  `table_num` int(11) default '0',
+  PRIMARY KEY  (`room_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_tablestatus`
+-- 
+
+CREATE TABLE `t_tablestatus` (
+  `table_id` int(11) NOT NULL default '0',
+  `room_id` int(11) NOT NULL default '0',
+  `table_name` varchar(50) default '',
+  `table_state` int(2) default '1',
+  PRIMARY KEY  (`table_id`,`room_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_tablestatusset`
+-- 
+
+CREATE TABLE `t_tablestatusset` (
+  `table_state` int(2) NOT NULL auto_increment,
+  `state_name` varchar(20) default NULL,
+  `empty_bmp` int(3) default '0',
+  `repast_bmp` int(3) default '0',
+  `person_num` int(11) default '0',
+  PRIMARY KEY  (`table_state`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `t_unit_set`
+-- 
+
+CREATE TABLE `t_unit_set` (
+  `unit_id` int(11) NOT NULL auto_increment,
+  `unit` varchar(10) default NULL,
+  PRIMARY KEY  (`unit_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+INSERT INTO `t_admin` (`ad_id`, `ad_log_name`, `ad_passwd`, `optype`, `ad_desc`, `ad_name`) VALUES 
+  (1,'sa','123','系统管理员','系统管理员','管理员'),
+  (5,'admin','123','大堂经理','收银台负责收银的系统操作','蓝小雪'),
+  (6,'abc','abc','大堂经理','abc','abc');
+
+INSERT INTO `t_employee` (`emp_id`, `emp_name`, `emp_sex`, `emp_job_id`, `emp_job_name`, `emp_phone`, `emp_photo`, `emp_birth`, `emp_address`, `emp_demo`) VALUES 
+  ('1005','王洪刚','男',3,'服务员','0471-8374748','','1980-04-06','呼和浩特',''),
+  ('1001','周士达','男',1,'厨师','13773628382','','1977-02-06','浙江杭州市32#','特长:浙江菜系'),
+  ('1002','张小红','女',1,'厨师','13984746373','','1977-08-06','福建闽南','闽南菜系');
+
+INSERT INTO `t_hotelmsg` (`hotelname`, `hoteltel`, `hoteltel2`, `hotelhttp`) VALUES 
+  ('祥嵘酒店','0411-888888','0471-666666','');
+
+INSERT INTO `t_job_set` (`job_id`, `job_name`) VALUES 
+  (1,'厨师'),
+  (2,'收银员'),
+  (3,'服务员'),
+  (4,'无'),
+  (5,'大堂经理'),
+  (6,'部门经理');
+
+INSERT INTO `t_opright` (`optype`, `module_no`, `haveright`) VALUES 
+  ('系统管理员','M6',1),
+  ('系统管理员','M5',1),
+  ('系统管理员','M4',1),
+  ('系统管理员','M3',1),
+  ('系统管理员','M2',1),
+  ('系统管理员','M1',1),
+  ('系统管理员','M0',1),
+  ('系统管理员','M7',1),
+  ('收银员','M7',1),
+  ('收银员','M6',0),
+  ('收银员','M5',0),
+  ('收银员','M4',0),
+  ('收银员','M3',0),
+  ('收银员','M2',0),
+  ('收银员','M1',0),
+  ('收银员','M0',1),
+  ('大堂经理','M7',1),
+  ('大堂经理','M6',0),
+  ('大堂经理','M5',0),
+  ('大堂经理','M4',1),
+  ('大堂经理','M3',0),
+  ('大堂经理','M0',1),
+  ('大堂经理','M1',0),
+  ('大堂经理','M2',0);
+
+INSERT INTO `t_roomset` (`room_id`, `room_name`, `table_num`) VALUES 
+  (2,'二楼宴会厅',20),
+  (1,'大堂餐厅',58),
+  (3,'贵宾包间',10);
+
+INSERT INTO `t_tablestatus` (`table_id`, `room_id`, `table_name`, `table_state`) VALUES 
+  (50,1,'',1),
+  (49,1,'',1),
+  (48,1,'',1),
+  (47,1,'',1),
+  (46,1,'',1),
+  (45,1,'',1),
+  (44,1,'',1),
+  (43,1,'',1),
+  (42,1,'',1),
+  (41,1,'',1),
+  (40,1,'',1),
+  (39,1,'',1),
+  (38,1,'',1),
+  (37,1,'',1),
+  (36,1,'',1),
+  (35,1,'',1),
+  (34,1,'',1),
+  (33,1,'',1),
+  (32,1,'',1),
+  (31,1,'',1),
+  (30,1,'',1),
+  (29,1,'',1),
+  (28,1,'',1),
+  (27,1,'',1),
+  (26,1,'',1),
+  (25,1,'',1),
+  (24,1,'',1),
+  (23,1,'',1),
+  (22,1,'',1),
+  (21,1,'',1),
+  (20,1,'',1),
+  (19,1,'',1),
+  (18,1,'',1),
+  (17,1,'',1),
+  (16,1,'',1),
+  (15,1,'',1),
+  (14,1,'',1),
+  (13,1,'',1),
+  (12,1,'',1),
+  (11,1,'',1),
+  (10,1,'',1),
+  (9,1,'',1),
+  (8,1,'',1),
+  (7,1,'',1),
+  (6,1,'',1),
+  (5,1,'',1),
+  (4,1,'',1),
+  (3,1,'',1),
+  (2,1,'',1),
+  (1,1,'',1),
+  (19,2,'',1),
+  (18,2,'',1),
+  (17,2,'',1),
+  (16,2,'',1),
+  (15,2,'',1),
+  (14,2,'',1),
+  (13,2,'',1),
+  (12,2,'',1),
+  (11,2,'',1),
+  (10,2,'',1),
+  (9,2,'会友轩',1),
+  (8,2,'',1),
+  (7,2,'',1),
+  (6,2,'',1),
+  (5,2,'',1),
+  (4,2,'',1),
+  (3,2,'',1),
+  (2,2,'',1),
+  (1,2,'',1),
+  (20,2,'',1),
+  (1,3,'会友居',1),
+  (2,3,'',1),
+  (3,3,'',1),
+  (4,3,'',1),
+  (5,3,'',1),
+  (6,3,'',1),
+  (7,3,'',1),
+  (8,3,'',1),
+  (9,3,'',1),
+  (10,3,'',1),
+  (51,1,'',1),
+  (52,1,'',1),
+  (53,1,'',1),
+  (54,1,'',1),
+  (55,1,'',1),
+  (56,1,'',1),
+  (57,1,'',1),
+  (58,1,'',1);
+
+INSERT INTO `t_tablestatusset` (`table_state`, `state_name`, `empty_bmp`, `repast_bmp`, `person_num`) VALUES 
+  (1,'桌型1',0,1,4),
+  (9,'桌型2',2,3,3),
+  (10,'桌型3',4,5,3),
+  (11,'桌型4',6,7,3),
+  (12,'桌型5',8,9,3),
+  (13,'桌型6',10,11,3);
+
+INSERT INTO `t_unit_set` (`unit_id`, `unit`) VALUES 
+  (1,'碗'),
+  (2,'瓶'),
+  (3,'斤'),
+  (4,'盘'),
+  (5,'盒'),
+  (7,'份'),
+  (8,'两'),
+  (9,'串');

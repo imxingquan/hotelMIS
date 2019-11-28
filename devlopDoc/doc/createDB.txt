@@ -1,0 +1,270 @@
+drop database if exists hotelmis
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_account'
+# 
+CREATE TABLE `t_account` (
+  `account_id` varchar(20) NOT NULL default '',
+  `room_id` int(11) default NULL,
+  `table_id` int(11) default NULL,
+  `cust_date` date default NULL,
+  `cust_time` time default NULL,
+  `pay_date` date default NULL,
+  `pay_time` date default NULL,
+  `subscription` float default '0',
+  `yscost` float default '0',
+  `erase_zero` float default '0',
+  `zhekou` float default '0',
+  `reckoning` int(11) default '0',
+  `sscost` float default '0',
+  `acc_status` int(1) default '0',
+  `ck_name` varchar(20) default '',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='????êy?Y±í\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nacc_status\\\\\\\\'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_accountdetails'
+# 
+CREATE TABLE `t_accountdetails` (
+  `account_id` varchar(20) default NULL,
+  `food_id` int(11) default '0',
+  `food_name` varchar(20) default NULL,
+  `food_num` int(11) default NULL,
+  `food_price` float default NULL,
+  `food_unit` varchar(10) default '',
+  `ck_name` varchar(10) default NULL,
+  KEY `index_accound_id` (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='????êy?'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_admin'
+# 
+CREATE TABLE `t_admin` (
+  `ad_id` int(11) NOT NULL auto_increment,
+  `ad_log_name` varchar(10) NOT NULL default '',
+  `ad_passwd` varchar(10) default NULL,
+  `optype` varchar(10) default NULL,
+  `ad_desc` varchar(100) default NULL,
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`ad_id`,`ad_log_name`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?μí3ó??§±í'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_arrerage'
+# 
+CREATE TABLE `t_arrerage` (
+  `ar_id` int(11) NOT NULL default '0',
+  `account_id` varchar(20) NOT NULL default '',
+  `guest_name` varchar(10) default NULL,
+  `guest_phone` varchar(20) default NULL,
+  `eat_money` float default NULL,
+  `eat_date` date default NULL,
+  `eat_time` time default NULL,
+  `ar_memo` varchar(200) default NULL,
+  PRIMARY KEY  (`ar_id`,`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?1????????'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_destine'
+# 
+CREATE TABLE `t_destine` (
+  `account_id` varchar(20) NOT NULL default '',
+  `guest_name` varchar(10) default NULL,
+  `guest_phone` varchar(100) default '',
+  `come_date` date default NULL,
+  `come_time` time default NULL,
+  `person_num` int(11) default NULL,
+  `subscription` float default NULL,
+  `remark` varchar(50) default NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?¤?'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_employee'
+# 
+CREATE TABLE `t_employee` (
+  `emp_id` varchar(20) NOT NULL default '',
+  `emp_name` varchar(10) default NULL,
+  `emp_sex` varchar(4) default NULL,
+  `emp_job_id` int(11) default NULL,
+  `emp_job_name` varchar(50) default '',
+  `emp_phone` varchar(20) default NULL,
+  `emp_photo` varchar(50) default NULL,
+  `emp_birth` date default NULL,
+  `emp_address` varchar(50) default NULL,
+  `emp_demo` varchar(100) default NULL,
+  PRIMARY KEY  (`emp_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_foodkind'
+# 
+CREATE TABLE `t_foodkind` (
+  `kind_id` int(11) NOT NULL auto_increment,
+  `kind_name` varchar(50) default NULL,
+  `kind_flag` int(11) default NULL,
+  `kind_ts` int(11) default NULL,
+  PRIMARY KEY  (`kind_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='???3???????????'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_job_set'
+# 
+CREATE TABLE `t_job_set` (
+  `job_id` int(11) NOT NULL auto_increment,
+  `job_name` varchar(20) default NULL,
+  PRIMARY KEY  (`job_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_menuinfo'
+# 
+CREATE TABLE `t_menuinfo` (
+  `food_id` int(11) NOT NULL auto_increment,
+  `kind_id` int(11) NOT NULL default '0',
+  `food_name` varchar(50) default NULL,
+  `food_price` float default '0',
+  `food_num` int(11) NOT NULL default '1',
+  `food_unit` varchar(10) default NULL,
+  `repertory_flag` int(1) default '0',
+  `ck_name` varchar(10) default NULL,
+  PRIMARY KEY  (`food_id`,`kind_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?2???????'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_opright'
+# 
+CREATE TABLE `t_opright` (
+  `optype` varchar(10) NOT NULL default '',
+  `module_no` varchar(10) NOT NULL default '',
+  `haveright` int(11) default NULL,
+  PRIMARY KEY  (`optype`,`module_no`),
+  UNIQUE KEY `Index_1` (`optype`,`module_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_outstore'
+# 
+CREATE TABLE `t_outstore` (
+  `out_id` int(11) NOT NULL auto_increment,
+  `food_id` int(11) default NULL,
+  `food_name` varchar(50) default NULL,
+  `out_num` int(11) default NULL,
+  `out_price` float default NULL,
+  `out_unit` varchar(10) default NULL,
+  `out_date` date default NULL,
+  `out_flag` varchar(100) default '0',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`out_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='3??a±í\\\\\\\\nout_price???????a2'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_repast'
+# 
+CREATE TABLE `t_repast` (
+  `account_id` varchar(20) NOT NULL default '',
+  `table_id` int(11) default '0',
+  `cust_date` date default NULL,
+  `cust_time` time default NULL,
+  `room_id` int(11) default '0',
+  `re_state` int(11) default NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?í2í±í\\\\\\\\nre_status: \\\\\\\\n0: ??×à\\'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_repdetails'
+# 
+CREATE TABLE `t_repdetails` (
+  `account_id` varchar(20) NOT NULL default '',
+  `food_id` int(11) default '0',
+  `food_name` varchar(50) default NULL,
+  `food_num` int(11) default NULL,
+  `food_price` float default NULL,
+  `food_unit` varchar(10) default '',
+  `ck_name` varchar(10) default NULL,
+  KEY `index_account_id` (`account_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?????2?????a?????'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_repertory'
+# 
+CREATE TABLE `t_repertory` (
+  `rep_id` int(11) NOT NULL auto_increment,
+  `food_id` int(11) default NULL,
+  `food_name` varchar(50) default NULL,
+  `rep_num` int(11) default NULL,
+  `rep_price` float default NULL,
+  `unit` varchar(10) default NULL,
+  `rep_date` date default NULL,
+  `rep_flag` int(11) default '0',
+  `ad_name` varchar(10) default NULL,
+  PRIMARY KEY  (`rep_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='è'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_repertory_total'
+# 
+CREATE TABLE `t_repertory_total` (
+  `food_id` int(11) NOT NULL default '0',
+  `rep_num` int(11) default '0',
+  PRIMARY KEY  (`food_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?a??í3?'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_roomset'
+# 
+CREATE TABLE `t_roomset` (
+  `room_id` int(11) NOT NULL default '0',
+  `room_name` varchar(50) default NULL,
+  `table_num` int(11) default '0',
+  PRIMARY KEY  (`room_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_tablestatus'
+# 
+CREATE TABLE `t_tablestatus` (
+  `table_id` int(11) NOT NULL default '0',
+  `room_id` int(11) NOT NULL default '0',
+  `table_state` int(11) default '1',
+  PRIMARY KEY  (`table_id`,`room_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_tablestatusset'
+# 
+CREATE TABLE `t_tablestatusset` (
+  `table_state` int(11) NOT NULL auto_increment,
+  `state_name` varchar(20) default NULL,
+  `person_num` int(11) default '0',
+  PRIMARY KEY  (`table_state`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312 COMMENT='?2?????????????????????????-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'; 
+
+# 主机: localhost
+# 数据库: hotelmis
+# 表: 't_unit_set'
+# 
+CREATE TABLE `t_unit_set` (
+  `unit_id` int(11) NOT NULL auto_increment,
+  `unit` varchar(10) default NULL,
+  PRIMARY KEY  (`unit_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gb2312; 
+

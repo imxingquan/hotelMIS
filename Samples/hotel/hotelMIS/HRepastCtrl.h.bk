@@ -1,0 +1,27 @@
+/***********************************************************************
+* Module:  HRepastCtrl.h
+* Author:  babala
+* Modified: 2005Äê4ÔÂ22ÈÕ 3:49:43
+* Purpose: Declaration of the class HRepastCtrl
+***********************************************************************/
+
+#if !defined(__hotelMIS_HRepastCtrl_h)
+#define __hotelMIS_HRepastCtrl_h
+#include "config.h"
+
+namespace hotelMIS{
+	class HRepastCtrl
+	{
+	public:
+		HRepastCtrl(mysqlpp::Connection * pCon);
+		~HRepastCtrl();
+		int getRepastState(int tableId, int roomId);
+
+	protected:
+	private:
+		mysqlpp::Connection * _pCon;
+
+
+	};
+}
+#endif

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLib", "GuiLib.vcproj", "{D9993911-6546-4624-95D8-CBEEC39FD376}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutlookDemo", "..\Samples\OutlookDemo\OutlookDemo.vcproj", "{48A248CC-C956-4E78-993A-9CBF4AE3A81A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D9993911-6546-4624-95D8-CBEEC39FD376}.Debug.ActiveCfg = Debug|Win32
+		{D9993911-6546-4624-95D8-CBEEC39FD376}.Debug.Build.0 = Debug|Win32
+		{D9993911-6546-4624-95D8-CBEEC39FD376}.Release.ActiveCfg = Release|Win32
+		{D9993911-6546-4624-95D8-CBEEC39FD376}.Release.Build.0 = Release|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug.ActiveCfg = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug.Build.0 = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release.ActiveCfg = Release|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+
+共享自定义
+
+copy $(OutDir)\hotelMIS.exe  ..\..\..\HOTEL\hotelMIS.exe

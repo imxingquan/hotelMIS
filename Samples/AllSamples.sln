@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutlookDemo", "OutlookDemo\OutlookDemo.vcproj", "{4BFB2FF6-44FC-453B-B5A3-A76028999C54}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4BFB2FF6-44FC-453B-B5A3-A76028999C54}.Debug.ActiveCfg = Debug|Win32
+		{4BFB2FF6-44FC-453B-B5A3-A76028999C54}.Debug.Build.0 = Debug|Win32
+		{4BFB2FF6-44FC-453B-B5A3-A76028999C54}.Release.ActiveCfg = Release|Win32
+		{4BFB2FF6-44FC-453B-B5A3-A76028999C54}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

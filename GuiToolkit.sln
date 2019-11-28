@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutlookDemo", "Samples\hotel\OutlookDemo.vcxproj", "{48A248CC-C956-4E78-993A-9CBF4AE3A81A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConfigServer", "ConfigServer\ConfigServer.vcxproj", "{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLib", "GuiLib\GuiLib.vcxproj", "{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Unicode|Default = Debug Unicode|Default
+		Debug|Default = Debug|Default
+		PreRelease|Default = PreRelease|Default
+		Release Unicode|Default = Release Unicode|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug Unicode|Default.ActiveCfg = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug Unicode|Default.Build.0 = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug|Default.ActiveCfg = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Debug|Default.Build.0 = Debug|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.PreRelease|Default.ActiveCfg = PreRelease|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.PreRelease|Default.Build.0 = PreRelease|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release Unicode|Default.ActiveCfg = Release|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release Unicode|Default.Build.0 = Release|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release|Default.ActiveCfg = Release|Win32
+		{48A248CC-C956-4E78-993A-9CBF4AE3A81A}.Release|Default.Build.0 = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Debug Unicode|Default.ActiveCfg = Debug|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Debug Unicode|Default.Build.0 = Debug|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Debug|Default.ActiveCfg = Debug|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Debug|Default.Build.0 = Debug|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.PreRelease|Default.ActiveCfg = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.PreRelease|Default.Build.0 = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Release Unicode|Default.ActiveCfg = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Release Unicode|Default.Build.0 = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Release|Default.ActiveCfg = Release|Win32
+		{F5F7A249-6DFF-4A8D-AD9D-69FD9FD85EB2}.Release|Default.Build.0 = Release|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Debug Unicode|Default.ActiveCfg = Debug Unicode|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Debug Unicode|Default.Build.0 = Debug Unicode|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Debug|Default.ActiveCfg = Debug|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Debug|Default.Build.0 = Debug|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.PreRelease|Default.ActiveCfg = Release|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.PreRelease|Default.Build.0 = Release|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Release Unicode|Default.ActiveCfg = Release Unicode|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Release Unicode|Default.Build.0 = Release Unicode|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Release|Default.ActiveCfg = Release|Win32
+		{87DB4DD4-3B89-434E-BC6E-9DB74692BA8D}.Release|Default.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

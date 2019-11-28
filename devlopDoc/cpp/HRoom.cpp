@@ -1,0 +1,101 @@
+/***********************************************************************
+ * Module:  HRoom.cpp
+ * Author:  babala
+ * Modified: 2005Äê4ÔÂ15ÈÕ 10:25:21
+ * Purpose: Implementation of the class HRoom
+ ***********************************************************************/
+
+#include "HRoom.h"
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::getRoom_id()
+// Purpose:    Implementation of HRoom::getRoom_id()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HRoom::getRoom_id(void)
+{
+   return room_id;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::setRoom_id(int newRoom_id)
+// Purpose:    Implementation of HRoom::setRoom_id()
+// Parameters:
+// - newRoom_id
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void HRoom::setRoom_id(int newRoom_id)
+{
+   room_id = newRoom_id;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::getRoom_name()
+// Purpose:    Implementation of HRoom::getRoom_name()
+// Return:     string
+////////////////////////////////////////////////////////////////////////
+
+string HRoom::getRoom_name(void)
+{
+   return room_name;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::setRoom_name(string newRoom_name)
+// Purpose:    Implementation of HRoom::setRoom_name()
+// Parameters:
+// - newRoom_name
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void HRoom::setRoom_name(string newRoom_name)
+{
+   room_name = newRoom_name;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::getTable_num()
+// Purpose:    Implementation of HRoom::getTable_num()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HRoom::getTable_num(void)
+{
+   return table_num;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::setTable_num(int newTable_num)
+// Purpose:    Implementation of HRoom::setTable_num()
+// Parameters:
+// - newTable_num
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void HRoom::setTable_num(int newTable_num)
+{
+   table_num = newTable_num;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::HRoom()
+// Purpose:    Implementation of HRoom::HRoom()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+HRoom::HRoom()
+{
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRoom::~HRoom()
+// Purpose:    Implementation of HRoom::~HRoom()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+HRoom::~HRoom()
+{
+   // TODO : implement
+}

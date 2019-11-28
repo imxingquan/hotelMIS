@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PreRelease|Win32">
+      <Configuration>PreRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>HotelMIS</ProjectName>
+    <ProjectGuid>{48A248CC-C956-4E78-993A-9CBF4AE3A81A}</ProjectGuid>
+    <RootNamespace>HotelMIS</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\bin\release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">
+    <OutDir>.\..\..\bin\release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\GuiLib;.\lib;.\include;.\hotelMIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FREE_EDITION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/HotelMIS.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>winmm.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GuiTk115d.lib;libmysql.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\Debug/HotelMISD.exe</OutputFile>
+      <Version />
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\bin\Debug;.\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\bin/OutlookDemo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\GuiLib;.\lib;.\include;.\hotelMIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/HotelMIS.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalOptions>winmm.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GuiTk115.lib;libmysql.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\Release/HotelMIS.exe</OutputFile>
+      <Version />
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\bin\Release\;.\lib\opt1/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\bin/OutlookDemo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\GuiLib;.\lib;.\include;.\hotelMIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FREE_EDITION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/HotelMIS.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy $(OutDir)hotelMIS.exe  ..\..\..\HOTEL\hotelMIS.exe
+</Command>
+      <Outputs>hotelMIS.exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalOptions>winmm.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GuiTk115.lib;libmysql.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\PreRelease/HotelMIS.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\bin\PreRelease\;.\lib\opt1/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\bin/OutlookDemo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddArrearageDialog.cpp" />
+    <ClCompile Include="AddMemberDlg.cpp" />
+    <ClCompile Include="AdminManagerDialog.cpp" />
+    <ClCompile Include="ArrearageDialog.cpp" />
+    <ClCompile Include="ArrearageSetDlg.cpp" />
+    <ClCompile Include="ArrPayDialog.cpp" />
+    <ClCompile Include="Cajon.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="CancelFoodDlg.cpp" />
+    <ClCompile Include="CancelMenuSearchDlg.cpp" />
+    <ClCompile Include="ChangeTableDialog.cpp" />
+    <ClCompile Include="CheckNeedPwdDlg.cpp" />
+    <ClCompile Include="DetailsListView.cpp" />
+    <ClCompile Include="DiningRoomTab.cpp" />
+    <ClCompile Include="EmployeeDialog.cpp" />
+    <ClCompile Include="EmpManagerDialog.cpp" />
+    <ClCompile Include="EmpParticularDlg.cpp" />
+    <ClCompile Include="EmpSetJobDialog.cpp" />
+    <ClCompile Include="excel9.cpp" />
+    <ClCompile Include="ExcelPrint.cpp" />
+    <ClCompile Include="FlashDialog.cpp" />
+    <ClCompile Include="GOut.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="GuiOutLookEx.cpp" />
+    <ClCompile Include="GuiToolBar.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="HBehindRep.cpp" />
+    <ClCompile Include="hotelMIS\HAccDetails.cpp" />
+    <ClCompile Include="hotelMIS\HAccDetailsCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HAccount.cpp" />
+    <ClCompile Include="hotelMIS\HAccountCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HAccSearchBdy.cpp" />
+    <ClCompile Include="hotelMIS\HAdmin.cpp" />
+    <ClCompile Include="hotelMIS\HAdminBdy.cpp" />
+    <ClCompile Include="hotelMIS\HArrerageBdy.cpp" />
+    <ClCompile Include="hotelMIS\HArrerageCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HBeforeRep.cpp" />
+    <ClCompile Include="hotelMIS\HBeforeRepCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HBehindRepCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HChgTableBdy.cpp" />
+    <ClCompile Include="hotelMIS\HDestine.cpp" />
+    <ClCompile Include="hotelMIS\HDestineBdy.cpp" />
+    <ClCompile Include="hotelMIS\HDestineCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HEmployee.cpp" />
+    <ClCompile Include="hotelMIS\HEmployeeBdy.cpp" />
+    <ClCompile Include="hotelMIS\HEmployeeCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HFoodKind.cpp" />
+    <ClCompile Include="hotelMIS\HFoodKindCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HInOutRep.cpp" />
+    <ClCompile Include="hotelMIS\HInOutRepCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HJobSet.cpp" />
+    <ClCompile Include="hotelMIS\HJobSetCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HMember.cpp" />
+    <ClCompile Include="hotelMIS\HMemberCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HMenuInfo.cpp" />
+    <ClCompile Include="hotelMIS\HMenuInfoCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HOpType.cpp" />
+    <ClCompile Include="hotelMIS\HOutStore.cpp" />
+    <ClCompile Include="hotelMIS\HOutStoreBdy.cpp" />
+    <ClCompile Include="hotelMIS\HOutStoreCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HPayBdy.cpp" />
+    <ClCompile Include="hotelMIS\HPwd.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepast.cpp" />
+    <ClCompile Include="hotelMIS\HRepastCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HRepBdy.cpp" />
+    <ClCompile Include="hotelMIS\HRepDetails.cpp" />
+    <ClCompile Include="hotelMIS\HRepDetailsCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HRepertory.cpp" />
+    <ClCompile Include="hotelMIS\HRepertoryCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HReportBdy.cpp" />
+    <ClCompile Include="hotelMIS\HReportDetails.cpp" />
+    <ClCompile Include="hotelMIS\HReportDetailsCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HRepSearchBdy.cpp" />
+    <ClCompile Include="hotelMIS\HRepTotal.cpp" />
+    <ClCompile Include="hotelMIS\HRepToTalCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HRoom.cpp" />
+    <ClCompile Include="hotelMIS\HRoomCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HSetHotelPrintMsg.cpp" />
+    <ClCompile Include="hotelMIS\HTableInfo.cpp" />
+    <ClCompile Include="hotelMIS\HTableStatus.cpp" />
+    <ClCompile Include="hotelMIS\HTableStatusCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HTableStatusSet.cpp" />
+    <ClCompile Include="hotelMIS\HTableStatusSetCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HTotalByCook.cpp" />
+    <ClCompile Include="hotelMIS\HUnitCtrl.cpp" />
+    <ClCompile Include="hotelMIS\HUnitSet.cpp" />
+    <ClCompile Include="hotelMIS\KDBCon.cpp" />
+    <ClCompile Include="hotelMIS\KProfile.cpp" />
+    <ClCompile Include="HPwdCtrl.cpp" />
+    <ClCompile Include="InOutRepSearchDlg.cpp" />
+    <ClCompile Include="InPrint.cpp" />
+    <ClCompile Include="InRepDlg.cpp" />
+    <ClCompile Include="JCDialog.cpp" />
+    <ClCompile Include="KindUnitSetDialog.cpp" />
+    <ClCompile Include="lib\coldata.cpp" />
+    <ClCompile Include="lib\connection.cpp" />
+    <ClCompile Include="lib\datetime.cpp" />
+    <ClCompile Include="lib\fields.cpp" />
+    <ClCompile Include="lib\field_names.cpp" />
+    <ClCompile Include="lib\field_types.cpp" />
+    <ClCompile Include="lib\manip.cpp" />
+    <ClCompile Include="lib\myexp.cpp" />
+    <ClCompile Include="lib\myset.cpp" />
+    <ClCompile Include="lib\query.cpp" />
+    <ClCompile Include="lib\result.cpp" />
+    <ClCompile Include="lib\row.cpp" />
+    <ClCompile Include="lib\sql_query.cpp" />
+    <ClCompile Include="lib\sql_string.cpp" />
+    <ClCompile Include="lib\string_util.cpp" />
+    <ClCompile Include="lib\type_info.cpp" />
+    <ClCompile Include="lib\vallist.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="MczDlg.cpp" />
+    <ClCompile Include="MemberInfoDlg.cpp" />
+    <ClCompile Include="MemCZListDlg.cpp" />
+    <ClCompile Include="MemModifyDlg.cpp" />
+    <ClCompile Include="MemXFSearchDlg.cpp" />
+    <ClCompile Include="MemZZDlg.cpp" />
+    <ClCompile Include="MemZZListDlg.cpp" />
+    <ClCompile Include="MenuManagerDialog.cpp" />
+    <ClCompile Include="MyCdKey.cpp" />
+    <ClCompile Include="MyTreeCtrl.cpp" />
+    <ClCompile Include="OutlookDemo.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="OutlookDemoDoc.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="OutlookDemoView.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="OutPutList.cpp" />
+    <ClCompile Include="OutRepDlg.cpp" />
+    <ClCompile Include="OutStoreStatusDialog.cpp" />
+    <ClCompile Include="PayDialog.cpp" />
+    <ClCompile Include="PreGoto.cpp" />
+    <ClCompile Include="PreParent.cpp" />
+    <ClCompile Include="PreView.cpp" />
+    <ClCompile Include="PrintReportDay.cpp" />
+    <ClCompile Include="PrintReportSyy.cpp" />
+    <ClCompile Include="PrintWarningDialog.cpp" />
+    <ClCompile Include="RegisterDialog.cpp" />
+    <ClCompile Include="RepAddDlg.cpp" />
+    <ClCompile Include="RepDelDlg.cpp" />
+    <ClCompile Include="RepertorySearchDialog.cpp" />
+    <ClCompile Include="RepModifyDlg.cpp" />
+    <ClCompile Include="RepNumWarning.cpp" />
+    <ClCompile Include="ReportDayDialog.cpp" />
+    <ClCompile Include="ReportDetailsDlg.cpp" />
+    <ClCompile Include="ReportDetailsPrint.cpp" />
+    <ClCompile Include="ReportMonthDialog.cpp" />
+    <ClCompile Include="ReportYearDialog.cpp" />
+    <ClCompile Include="RepProdDetailsSearchDlg.cpp" />
+    <ClCompile Include="RepTotalDlg.cpp" />
+    <ClCompile Include="SearchAccountDlg.cpp" />
+    <ClCompile Include="SetChuFangMenu.cpp" />
+    <ClCompile Include="SetDBEnvDialog.cpp" />
+    <ClCompile Include="SetMemDjDlg.cpp" />
+    <ClCompile Include="SetpConfigDialog.cpp" />
+    <ClCompile Include="SpecialMenuDialog.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">Create</PrecompiledHeader>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='PreRelease|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="Step1.cpp" />
+    <ClCompile Include="Step2.cpp" />
+    <ClCompile Include="Step3.cpp" />
+    <ClCompile Include="Step4.cpp" />
+    <ClCompile Include="Step5.cpp" />
+    <ClCompile Include="Step6.cpp" />
+    <ClCompile Include="SysUserManagerDlg.cpp" />
+    <ClCompile Include="SysWarningDialog.cpp" />
+    <ClCompile Include="SyyReportDlg.cpp" />
+    <ClCompile Include="TableSetBmpDialog.cpp" />
+    <ClCompile Include="TableSetDialog.cpp" />
+    <ClCompile Include="TabView.cpp" />
+    <ClCompile Include="TreePropSheet\PropPageFrame.cpp" />
+    <ClCompile Include="TreePropSheet\PropPageFrameDefault.cpp" />
+    <ClCompile Include="TreePropSheet\TreePropSheet.cpp" />
+    <ClCompile Include="XFDetailsDlg.cpp" />
+    <ClCompile Include="YDDialog.cpp" />
+    <ClCompile Include="YDXXDialog.cpp" />
+    <ClCompile Include="ZdyPriceDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OutlookDemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddArrearageDialog.h" />
+    <ClInclude Include="AddMemberDlg.h" />
+    <ClInclude Include="AdminManagerDialog.h" />
+    <ClInclude Include="ArrearageDialog.h" />
+    <ClInclude Include="ArrearageSetDlg.h" />
+    <ClInclude Include="ArrPayDialog.h" />
+    <ClInclude Include="Cajon.h" />
+    <ClInclude Include="CancelFoodDlg.h" />
+    <ClInclude Include="CancelMenuSearchDlg.h" />
+    <ClInclude Include="ChangeTableDialog.h" />
+    <ClInclude Include="CheckNeedPwdDlg.h" />
+    <ClInclude Include="DetailsListView.h" />
+    <ClInclude Include="DiningRoomTab.h" />
+    <ClInclude Include="EmployeeDialog.h" />
+    <ClInclude Include="EmpManagerDialog.h" />
+    <ClInclude Include="EmpParticularDlg.h" />
+    <ClInclude Include="EmpSetJobDialog.h" />
+    <ClInclude Include="excel9.h" />
+    <ClInclude Include="ExcelPrint.h" />
+    <ClInclude Include="FlashDialog.h" />
+    <ClInclude Include="GOut.h" />
+    <ClInclude Include="GuiOutLookEx.h" />
+    <ClInclude Include="GuiToolBar.h" />
+    <ClInclude Include="hotelMIS\config.h" />
+    <ClInclude Include="hotelMIS\HAccDetails.h" />
+    <ClInclude Include="hotelMIS\HAccDetailsCtrl.h" />
+    <ClInclude Include="hotelMIS\HAccount.h" />
+    <ClInclude Include="hotelMIS\HAccountCtrl.h" />
+    <ClInclude Include="hotelMIS\HAccSearchBdy.h" />
+    <ClInclude Include="hotelMIS\HAdmin.h" />
+    <ClInclude Include="hotelMIS\HAdminBdy.h" />
+    <ClInclude Include="hotelMIS\HArrerageBdy.h" />
+    <ClInclude Include="hotelMIS\HArrerageCtrl.h" />
+    <ClInclude Include="hotelMIS\HArrerageZH.h" />
+    <ClInclude Include="hotelMIS\HBeforeRep.h" />
+    <ClInclude Include="hotelMIS\HBeforeRepCtrl.h" />
+    <ClInclude Include="hotelMIS\HBehindRep.h" />
+    <ClInclude Include="hotelMIS\HBehindRepCtrl.h" />
+    <ClInclude Include="hotelMIS\HChgTableBdy.h" />
+    <ClInclude Include="hotelMIS\HDestine.h" />
+    <ClInclude Include="hotelMIS\HDestineBdy.h" />
+    <ClInclude Include="hotelMIS\HDestineCtrl.h" />
+    <ClInclude Include="hotelMIS\HEmployee.h" />
+    <ClInclude Include="hotelMIS\HEmployeeBdy.h" />
+    <ClInclude Include="hotelMIS\HEmployeeCtrl.h" />
+    <ClInclude Include="hotelMIS\HFoodKind.h" />
+    <ClInclude Include="hotelMIS\HFoodKindCtrl.h" />
+    <ClInclude Include="hotelMIS\HInOutRep.h" />
+    <ClInclude Include="hotelMIS\HInOutRepCtrl.h" />
+    <ClInclude Include="hotelMIS\HJobSet.h" />
+    <ClInclude Include="hotelMIS\HJobSetCtrl.h" />
+    <ClInclude Include="hotelMIS\HMember.h" />
+    <ClInclude Include="hotelMIS\HMemberCtrl.h" />
+    <ClInclude Include="hotelMIS\HMenuInfo.h" />
+    <ClInclude Include="hotelMIS\HMenuInfoCtrl.h" />
+    <ClInclude Include="hotelMIS\HOpType.h" />
+    <ClInclude Include="hotelMIS\HOutStore.h" />
+    <ClInclude Include="hotelMIS\HOutStoreBdy.h" />
+    <ClInclude Include="hotelMIS\HOutStoreCtrl.h" />
+    <ClInclude Include="hotelMIS\HPayBdy.h" />
+    <ClInclude Include="hotelMIS\HPwd.h" />
+    <ClInclude Include="hotelMIS\HPwdCtrl.h" />
+    <ClInclude Include="hotelMIS\HRepast.h" />
+    <ClInclude Include="hotelMIS\HRepastCtrl.h" />
+    <ClInclude Include="hotelMIS\HRepBdy.h" />
+    <ClInclude Include="hotelMIS\HRepDetails.h" />
+    <ClInclude Include="hotelMIS\HRepDetailsCtrl.h" />
+    <ClInclude Include="hotelMIS\HRepertory.h" />
+    <ClInclude Include="hotelMIS\HRepertoryCtrl.h" />
+    <ClInclude Include="hotelMIS\HReportBdy.h" />
+    <ClInclude Include="hotelMIS\HReportDetails.h" />
+    <ClInclude Include="hotelMIS\HReportDtailsCtrl.h" />
+    <ClInclude Include="hotelMIS\HRepSearchBdy.h" />
+    <ClInclude Include="hotelMIS\HRepTotal.h" />
+    <ClInclude Include="hotelMIS\HRepToTalCtrl.h" />
+    <ClInclude Include="hotelMIS\HRoom.h" />
+    <ClInclude Include="hotelMIS\HRoomCtrl.h" />
+    <ClInclude Include="hotelMIS\HSetHotelPrintMsg.h" />
+    <ClInclude Include="hotelMIS\HTableInfo.h" />
+    <ClInclude Include="hotelMIS\HTableStatus.h" />
+    <ClInclude Include="hotelMIS\HTableStatusCtrl.h" />
+    <ClInclude Include="hotelMIS\HTableStatusSet.h" />
+    <ClInclude Include="hotelMIS\HTableStatusSetCtrl.h" />
+    <ClInclude Include="hotelMIS\HTotalByCook.h" />
+    <ClInclude Include="hotelMIS\HUnitCtrl.h" />
+    <ClInclude Include="hotelMIS\HUnitSet.h" />
+    <ClInclude Include="hotelMIS\KDBCon.h" />
+    <ClInclude Include="hotelMIS\KProfile.h" />
+    <ClInclude Include="InOutRepSearchDlg.h" />
+    <ClInclude Include="InPrint.h" />
+    <ClInclude Include="InRepDlg.h" />
+    <ClInclude Include="JCDialog.h" />
+    <ClInclude Include="KindUnitSetDialog.h" />
+    <ClInclude Include="lib\bad_query.h" />
+    <ClInclude Include="lib\coldata.h" />
+    <ClInclude Include="lib\compare.h" />
+    <ClInclude Include="lib\connection.h" />
+    <ClInclude Include="lib\const_string.h" />
+    <ClInclude Include="lib\convert.h" />
+    <ClInclude Include="lib\custom-macros.h" />
+    <ClInclude Include="lib\custom.h" />
+    <ClInclude Include="lib\datetime.h" />
+    <ClInclude Include="lib\defs.h" />
+    <ClInclude Include="lib\exceptions.h" />
+    <ClInclude Include="lib\fields.h" />
+    <ClInclude Include="lib\field_names.h" />
+    <ClInclude Include="lib\field_types.h" />
+    <ClInclude Include="lib\manip.h" />
+    <ClInclude Include="lib\myexp.h" />
+    <ClInclude Include="lib\myset.h" />
+    <ClInclude Include="lib\mysql++.h" />
+    <ClInclude Include="lib\null.h" />
+    <ClInclude Include="lib\platform.h" />
+    <ClInclude Include="lib\query.h" />
+    <ClInclude Include="lib\resiter.h" />
+    <ClInclude Include="lib\result.h" />
+    <ClInclude Include="lib\row.h" />
+    <ClInclude Include="lib\sql_query.h" />
+    <ClInclude Include="lib\sql_string.h" />
+    <ClInclude Include="lib\stream2string.h" />
+    <ClInclude Include="lib\string_util.h" />
+    <ClInclude Include="lib\tiny_int.h" />
+    <ClInclude Include="lib\type_info.h" />
+    <ClInclude Include="lib\vallist.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MczDlg.h" />
+    <ClInclude Include="MemberInfoDlg.h" />
+    <ClInclude Include="MemCZListDlg.h" />
+    <ClInclude Include="MemModifyDlg.h" />
+    <ClInclude Include="MemXFSearchDlg.h" />
+    <ClInclude Include="MemZZDlg.h" />
+    <ClInclude Include="MemZZListDlg.h" />
+    <ClInclude Include="MenuManagerDialog.h" />
+    <ClInclude Include="MyCdKey.h" />
+    <ClInclude Include="MyTreeCtrl.h" />
+    <ClInclude Include="OutlookDemo.h" />
+    <ClInclude Include="OutlookDemoDoc.h" />
+    <ClInclude Include="OutlookDemoView.h" />
+    <ClInclude Include="OutPutList.h" />
+    <ClInclude Include="OutRepDlg.h" />
+    <ClInclude Include="OutStoreStatusDialog.h" />
+    <ClInclude Include="PayDialog.h" />
+    <ClInclude Include="PreGoto.h" />
+    <ClInclude Include="PreParent.h" />
+    <ClInclude Include="PreView.h" />
+    <ClInclude Include="PrintReportDay.h" />
+    <ClInclude Include="PrintReportSyy.h" />
+    <ClInclude Include="PrintWarningDialog.h" />
+    <ClInclude Include="RegisterDialog.h" />
+    <ClInclude Include="RepAddDlg.h" />
+    <ClInclude Include="RepDelDlg.h" />
+    <ClInclude Include="RepertorySearchDialog.h" />
+    <ClInclude Include="RepModifyDlg.h" />
+    <ClInclude Include="RepNumWarning.h" />
+    <ClInclude Include="ReportDayDialog.h" />
+    <ClInclude Include="ReportDetailsDlg.h" />
+    <ClInclude Include="ReportDetailsPrint.h" />
+    <ClInclude Include="ReportMonthDialog.h" />
+    <ClInclude Include="ReportYearDialog.h" />
+    <ClInclude Include="RepProdDetailsSearchDlg.h" />
+    <ClInclude Include="RepTotalDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SearchAccountDlg.h" />
+    <ClInclude Include="SetChuFangMenu.h" />
+    <ClInclude Include="SetDBEnvDialog.h" />
+    <ClInclude Include="SetMemDjDlg.h" />
+    <ClInclude Include="SetpConfigDialog.h" />
+    <ClInclude Include="SpecialMenuDialog.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Step1.h" />
+    <ClInclude Include="Step2.h" />
+    <ClInclude Include="Step3.h" />
+    <ClInclude Include="Step4.h" />
+    <ClInclude Include="Step5.h" />
+    <ClInclude Include="Step6.h" />
+    <ClInclude Include="SysUserManagerDlg.h" />
+    <ClInclude Include="SysWarningDialog.h" />
+    <ClInclude Include="SyyReportDlg.h" />
+    <ClInclude Include="TableSetBmpDialog.h" />
+    <ClInclude Include="TableSetDialog.h" />
+    <ClInclude Include="TabView.h" />
+    <ClInclude Include="TreePropSheet\PropPageFrame.h" />
+    <ClInclude Include="TreePropSheet\PropPageFrameDefault.h" />
+    <ClInclude Include="TreePropSheet\TreePropSheet.h" />
+    <ClInclude Include="XFDetailsDlg.h" />
+    <ClInclude Include="YDDialog.h" />
+    <ClInclude Include="YDXXDialog.h" />
+    <ClInclude Include="ZdyPriceDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\eventlogWarn.ico" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\OutlookDemo.ico" />
+    <Image Include="res\OutlookDemoDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\OutlookDemo.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="OutlookDemo.rc" _x007B_66833FE6-8583-11D1-B16A-00C0F0283628_x007D_="CToolbar1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

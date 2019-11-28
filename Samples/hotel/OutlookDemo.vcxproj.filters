@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{974ed008-ca7c-4819-82c2-d0ee6224bef3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7130da5a-a540-474d-bafc-19d8e5cfd46d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="mysqlpp">
+      <UniqueIdentifier>{c9fb03d6-b890-4241-a41a-6de3df4cc78b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS">
+      <UniqueIdentifier>{8c8e162e-2dfa-4c21-99cb-872984c46d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\数据库连接">
+      <UniqueIdentifier>{ba8a3022-3554-4d30-882f-c65109c620c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\商品单位设置">
+      <UniqueIdentifier>{2266d4e2-ebf5-4643-8e37-1e7580c1f637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\餐厅设置">
+      <UniqueIdentifier>{76934f7c-04fd-4d88-b921-b38a8498f26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\就餐管理">
+      <UniqueIdentifier>{b2948ab1-baae-481f-94b7-0512999be1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\菜谱管理">
+      <UniqueIdentifier>{2fe8e764-fec6-45f0-9598-1bf7010603d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\餐桌设置">
+      <UniqueIdentifier>{c7425af7-2328-44c1-8a0e-88e18fb7c670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\系统用户管理">
+      <UniqueIdentifier>{ae0f3bda-ce9e-4259-a5d0-862d1db282a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\结账账单">
+      <UniqueIdentifier>{91b03bc2-16c0-4f97-a4a8-d006cd65c055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\就餐账单">
+      <UniqueIdentifier>{c669cef9-2748-488e-9cd9-2b5003708d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\统计报表">
+      <UniqueIdentifier>{704fd76c-f226-42b2-8790-a264c6b08663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\换桌">
+      <UniqueIdentifier>{e1e83eed-3e49-4fb2-8f0b-69b4b3f55f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\员工管理">
+      <UniqueIdentifier>{b2f7ea1d-0027-40d0-8d3f-92f95dd974ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\定餐管理">
+      <UniqueIdentifier>{ca2151b8-b08d-4513-96ca-d4bd999a1e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\会员管理">
+      <UniqueIdentifier>{eec2019c-bbbe-42b0-9ce0-e2efda14210f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\挂账管理">
+      <UniqueIdentifier>{524b2b0a-41f2-43b3-bb14-1e4fb9b8ab07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\库存管理">
+      <UniqueIdentifier>{627378e9-03b2-450d-ad1e-3e3fc5c2c1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\库存管理\台前库存">
+      <UniqueIdentifier>{430cf1be-76aa-47b5-9c75-602680eb3ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\库存管理\后台库存">
+      <UniqueIdentifier>{c7a31e94-5293-4f0d-a246-db0c32b050e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\库存管理\出入库">
+      <UniqueIdentifier>{a453dd01-d2c5-4eb9-ac86-87e194dc8402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotelMIS\打印设置">
+      <UniqueIdentifier>{4c9bf6cd-f242-4ae1-9cdc-a18cad423fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="打印">
+      <UniqueIdentifier>{29d1d22f-edf3-43e3-8c98-e5893f086cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="用户登陆">
+      <UniqueIdentifier>{88853aa2-2ae1-4cbb-aaac-fc7bd32053a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="库存管理">
+      <UniqueIdentifier>{2263df0b-d4aa-4aed-925a-311e3b8432cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理">
+      <UniqueIdentifier>{e4248b92-814d-4e67-9f02-452bafa7fdbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理\就餐">
+      <UniqueIdentifier>{6b0cb557-759a-40df-9ddb-ec1664917b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理\预定">
+      <UniqueIdentifier>{82e5a90f-869b-497d-ab60-f412fdb6c310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理\结账">
+      <UniqueIdentifier>{28296961-e6a5-45d9-a682-ea480c20b8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理\换桌">
+      <UniqueIdentifier>{6c5305e4-7671-4734-84ad-835794823f38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="餐饮管理\挂账">
+      <UniqueIdentifier>{e589bd8d-4cba-4ef6-a43f-7b69696c4715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="员工管理">
+      <UniqueIdentifier>{828bde94-4e38-442b-9b34-fc998ada96ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="菜谱管理">
+      <UniqueIdentifier>{7b51929c-d254-4ce0-9f22-14b92dd49dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="统计报表">
+      <UniqueIdentifier>{2dfd0209-617d-48e0-8011-e3ee8eff1500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="会员管理">
+      <UniqueIdentifier>{9952d076-cf19-4cae-b2f4-1c16517026f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="系统设置">
+      <UniqueIdentifier>{87666d7c-c447-4fc8-b56c-ad2f72b7bcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="用户认证">
+      <UniqueIdentifier>{bd161ce1-96cc-478b-848b-df7e09df6678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登陆Flash">
+      <UniqueIdentifier>{c04ec096-01e8-4117-a1c2-3d4319e37f06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置DB连接">
+      <UniqueIdentifier>{0141266a-df71-4c6d-8660-092c8efabeec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{28d367e8-3ebf-4ef1-b092-7e911a239a52}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="TrePropSheet">
+      <UniqueIdentifier>{0583f5de-e379-4357-b43d-61ed526b5e7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cajon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CancelFoodDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CancelMenuSearchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailsListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiningRoomTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GOut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiOutLookEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemCZListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemXFSearchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemZZDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemZZListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookDemoDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookDemoView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutPutList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutStoreStatusDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepertorySearchDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepNumWarning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepProdDetailsSearchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepTotalDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchAccountDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SysWarningDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SyyReportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XFDetailsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZdyPriceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\coldata.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\connection.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\datetime.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\field_names.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\field_types.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\fields.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\manip.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\myexp.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\myset.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\query.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\result.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\row.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sql_query.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sql_string.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\string_util.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\type_info.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\vallist.cpp">
+      <Filter>mysqlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HOutStore.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HOutStoreBdy.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HOutStoreCtrl.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepertory.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepertoryCtrl.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepSearchBdy.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepTotal.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepToTalCtrl.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTotalByCook.cpp">
+      <Filter>hotelMIS</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\KDBCon.cpp">
+      <Filter>hotelMIS\数据库连接</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\KProfile.cpp">
+      <Filter>hotelMIS\数据库连接</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HUnitCtrl.cpp">
+      <Filter>hotelMIS\商品单位设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HUnitSet.cpp">
+      <Filter>hotelMIS\商品单位设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRoom.cpp">
+      <Filter>hotelMIS\餐厅设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRoomCtrl.cpp">
+      <Filter>hotelMIS\餐厅设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HPwd.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="HPwdCtrl.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepast.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepastCtrl.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepBdy.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepDetails.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HRepDetailsCtrl.cpp">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HFoodKind.cpp">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HFoodKindCtrl.cpp">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HMenuInfo.cpp">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HMenuInfoCtrl.cpp">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTableInfo.cpp">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTableStatus.cpp">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTableStatusCtrl.cpp">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTableStatusSet.cpp">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HTableStatusSetCtrl.cpp">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAdmin.cpp">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAdminBdy.cpp">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HOpType.cpp">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAccount.cpp">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAccountCtrl.cpp">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAccSearchBdy.cpp">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HPayBdy.cpp">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAccDetails.cpp">
+      <Filter>hotelMIS\就餐账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HAccDetailsCtrl.cpp">
+      <Filter>hotelMIS\就餐账单</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HReportBdy.cpp">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HReportDetails.cpp">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HReportDetailsCtrl.cpp">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HChgTableBdy.cpp">
+      <Filter>hotelMIS\换桌</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HEmployee.cpp">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HEmployeeBdy.cpp">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HEmployeeCtrl.cpp">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HJobSet.cpp">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HJobSetCtrl.cpp">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HDestine.cpp">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HDestineBdy.cpp">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HDestineCtrl.cpp">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HMember.cpp">
+      <Filter>hotelMIS\会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HMemberCtrl.cpp">
+      <Filter>hotelMIS\会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HArrerageBdy.cpp">
+      <Filter>hotelMIS\挂账管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HArrerageCtrl.cpp">
+      <Filter>hotelMIS\挂账管理</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HBeforeRep.cpp">
+      <Filter>hotelMIS\库存管理\台前库存</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HBeforeRepCtrl.cpp">
+      <Filter>hotelMIS\库存管理\台前库存</Filter>
+    </ClCompile>
+    <ClCompile Include="HBehindRep.cpp">
+      <Filter>hotelMIS\库存管理\后台库存</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HBehindRepCtrl.cpp">
+      <Filter>hotelMIS\库存管理\后台库存</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HInOutRep.cpp">
+      <Filter>hotelMIS\库存管理\出入库</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HInOutRepCtrl.cpp">
+      <Filter>hotelMIS\库存管理\出入库</Filter>
+    </ClCompile>
+    <ClCompile Include="hotelMIS\HSetHotelPrintMsg.cpp">
+      <Filter>hotelMIS\打印设置</Filter>
+    </ClCompile>
+    <ClCompile Include="excel9.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelPrint.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="InPrint.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PreGoto.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PreParent.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PreView.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintReportDay.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintReportSyy.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintWarningDialog.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportDetailsPrint.cpp">
+      <Filter>打印</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>用户登陆</Filter>
+    </ClCompile>
+    <ClCompile Include="InOutRepSearchDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="InRepDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="OutRepDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="RepAddDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="RepDelDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="RepModifyDlg.cpp">
+      <Filter>库存管理</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckNeedPwdDlg.cpp">
+      <Filter>餐饮管理\就餐</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDialog.cpp">
+      <Filter>餐饮管理\就餐</Filter>
+    </ClCompile>
+    <ClCompile Include="YDDialog.cpp">
+      <Filter>餐饮管理\预定</Filter>
+    </ClCompile>
+    <ClCompile Include="YDXXDialog.cpp">
+      <Filter>餐饮管理\预定</Filter>
+    </ClCompile>
+    <ClCompile Include="PayDialog.cpp">
+      <Filter>餐饮管理\结账</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeTableDialog.cpp">
+      <Filter>餐饮管理\换桌</Filter>
+    </ClCompile>
+    <ClCompile Include="AddArrearageDialog.cpp">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrearageDialog.cpp">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrearageSetDlg.cpp">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrPayDialog.cpp">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClCompile>
+    <ClCompile Include="EmployeeDialog.cpp">
+      <Filter>员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="EmpManagerDialog.cpp">
+      <Filter>员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="EmpParticularDlg.cpp">
+      <Filter>员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="EmpSetJobDialog.cpp">
+      <Filter>员工管理</Filter>
+    </ClCompile>
+    <ClCompile Include="KindUnitSetDialog.cpp">
+      <Filter>菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManagerDialog.cpp">
+      <Filter>菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="SetChuFangMenu.cpp">
+      <Filter>菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialMenuDialog.cpp">
+      <Filter>菜谱管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportDayDialog.cpp">
+      <Filter>统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportDetailsDlg.cpp">
+      <Filter>统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportMonthDialog.cpp">
+      <Filter>统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportYearDialog.cpp">
+      <Filter>统计报表</Filter>
+    </ClCompile>
+    <ClCompile Include="AddMemberDlg.cpp">
+      <Filter>会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MczDlg.cpp">
+      <Filter>会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MemberInfoDlg.cpp">
+      <Filter>会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MemModifyDlg.cpp">
+      <Filter>会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMemDjDlg.cpp">
+      <Filter>会员管理</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminManagerDialog.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="SetpConfigDialog.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step1.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step2.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step3.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step4.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step5.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="Step6.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="SysUserManagerDlg.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="TableSetBmpDialog.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="TableSetDialog.cpp">
+      <Filter>系统设置</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCdKey.cpp">
+      <Filter>用户认证</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterDialog.cpp">
+      <Filter>用户认证</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashDialog.cpp">
+      <Filter>登陆Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDBEnvDialog.cpp">
+      <Filter>配置DB连接</Filter>
+    </ClCompile>
+    <ClCompile Include="TreePropSheet\PropPageFrame.cpp">
+      <Filter>TrePropSheet</Filter>
+    </ClCompile>
+    <ClCompile Include="TreePropSheet\PropPageFrameDefault.cpp">
+      <Filter>TrePropSheet</Filter>
+    </ClCompile>
+    <ClCompile Include="TreePropSheet\TreePropSheet.cpp">
+      <Filter>TrePropSheet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OutlookDemo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cajon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CancelFoodDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CancelMenuSearchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailsListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiningRoomTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GOut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiOutLookEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemCZListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemXFSearchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemZZDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemZZListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookDemoDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookDemoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutPutList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutStoreStatusDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepertorySearchDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepNumWarning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepProdDetailsSearchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepTotalDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchAccountDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SysWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SyyReportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XFDetailsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZdyPriceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\bad_query.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\coldata.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compare.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\connection.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\const_string.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\convert.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\custom-macros.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\custom.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\datetime.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\defs.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\exceptions.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\field_names.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\field_types.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fields.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\manip.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\myexp.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\myset.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\mysql++.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\null.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\platform.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\query.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\resiter.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\result.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\row.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sql_query.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sql_string.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\stream2string.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\string_util.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\tiny_int.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\type_info.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\vallist.h">
+      <Filter>mysqlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HOutStore.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HOutStoreBdy.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HOutStoreCtrl.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepertory.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepertoryCtrl.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepSearchBdy.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepTotal.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepToTalCtrl.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTotalByCook.h">
+      <Filter>hotelMIS</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\config.h">
+      <Filter>hotelMIS\数据库连接</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\KDBCon.h">
+      <Filter>hotelMIS\数据库连接</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\KProfile.h">
+      <Filter>hotelMIS\数据库连接</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HUnitCtrl.h">
+      <Filter>hotelMIS\商品单位设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HUnitSet.h">
+      <Filter>hotelMIS\商品单位设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRoom.h">
+      <Filter>hotelMIS\餐厅设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRoomCtrl.h">
+      <Filter>hotelMIS\餐厅设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HPwd.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HPwdCtrl.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepast.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepastCtrl.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepBdy.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepDetails.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HRepDetailsCtrl.h">
+      <Filter>hotelMIS\就餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HFoodKind.h">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HFoodKindCtrl.h">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HMenuInfo.h">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HMenuInfoCtrl.h">
+      <Filter>hotelMIS\菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTableInfo.h">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTableStatus.h">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTableStatusCtrl.h">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTableStatusSet.h">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HTableStatusSetCtrl.h">
+      <Filter>hotelMIS\餐桌设置</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAdmin.h">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAdminBdy.h">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HOpType.h">
+      <Filter>hotelMIS\系统用户管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAccount.h">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAccountCtrl.h">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAccSearchBdy.h">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HPayBdy.h">
+      <Filter>hotelMIS\结账账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAccDetails.h">
+      <Filter>hotelMIS\就餐账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HAccDetailsCtrl.h">
+      <Filter>hotelMIS\就餐账单</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HReportBdy.h">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HReportDetails.h">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HReportDtailsCtrl.h">
+      <Filter>hotelMIS\统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HChgTableBdy.h">
+      <Filter>hotelMIS\换桌</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HEmployee.h">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HEmployeeBdy.h">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HEmployeeCtrl.h">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HJobSet.h">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HJobSetCtrl.h">
+      <Filter>hotelMIS\员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HDestine.h">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HDestineBdy.h">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HDestineCtrl.h">
+      <Filter>hotelMIS\定餐管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HMember.h">
+      <Filter>hotelMIS\会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HMemberCtrl.h">
+      <Filter>hotelMIS\会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HArrerageBdy.h">
+      <Filter>hotelMIS\挂账管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HArrerageCtrl.h">
+      <Filter>hotelMIS\挂账管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HArrerageZH.h">
+      <Filter>hotelMIS\挂账管理</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HBeforeRep.h">
+      <Filter>hotelMIS\库存管理\台前库存</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HBeforeRepCtrl.h">
+      <Filter>hotelMIS\库存管理\台前库存</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HBehindRep.h">
+      <Filter>hotelMIS\库存管理\后台库存</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HBehindRepCtrl.h">
+      <Filter>hotelMIS\库存管理\后台库存</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HInOutRep.h">
+      <Filter>hotelMIS\库存管理\出入库</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HInOutRepCtrl.h">
+      <Filter>hotelMIS\库存管理\出入库</Filter>
+    </ClInclude>
+    <ClInclude Include="hotelMIS\HSetHotelPrintMsg.h">
+      <Filter>hotelMIS\打印设置</Filter>
+    </ClInclude>
+    <ClInclude Include="excel9.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcelPrint.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="InPrint.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PreGoto.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PreParent.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PreView.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintReportDay.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintReportSyy.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintWarningDialog.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportDetailsPrint.h">
+      <Filter>打印</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>用户登陆</Filter>
+    </ClInclude>
+    <ClInclude Include="InOutRepSearchDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="InRepDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="OutRepDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="RepAddDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="RepDelDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="RepModifyDlg.h">
+      <Filter>库存管理</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckNeedPwdDlg.h">
+      <Filter>餐饮管理\就餐</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDialog.h">
+      <Filter>餐饮管理\就餐</Filter>
+    </ClInclude>
+    <ClInclude Include="YDDialog.h">
+      <Filter>餐饮管理\预定</Filter>
+    </ClInclude>
+    <ClInclude Include="YDXXDialog.h">
+      <Filter>餐饮管理\预定</Filter>
+    </ClInclude>
+    <ClInclude Include="PayDialog.h">
+      <Filter>餐饮管理\结账</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeTableDialog.h">
+      <Filter>餐饮管理\换桌</Filter>
+    </ClInclude>
+    <ClInclude Include="AddArrearageDialog.h">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrearageDialog.h">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrearageSetDlg.h">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrPayDialog.h">
+      <Filter>餐饮管理\挂账</Filter>
+    </ClInclude>
+    <ClInclude Include="EmployeeDialog.h">
+      <Filter>员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="EmpManagerDialog.h">
+      <Filter>员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="EmpParticularDlg.h">
+      <Filter>员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="EmpSetJobDialog.h">
+      <Filter>员工管理</Filter>
+    </ClInclude>
+    <ClInclude Include="KindUnitSetDialog.h">
+      <Filter>菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuManagerDialog.h">
+      <Filter>菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="SetChuFangMenu.h">
+      <Filter>菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialMenuDialog.h">
+      <Filter>菜谱管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportDayDialog.h">
+      <Filter>统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportDetailsDlg.h">
+      <Filter>统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportMonthDialog.h">
+      <Filter>统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportYearDialog.h">
+      <Filter>统计报表</Filter>
+    </ClInclude>
+    <ClInclude Include="AddMemberDlg.h">
+      <Filter>会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MczDlg.h">
+      <Filter>会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MemberInfoDlg.h">
+      <Filter>会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MemModifyDlg.h">
+      <Filter>会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMemDjDlg.h">
+      <Filter>会员管理</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminManagerDialog.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="SetpConfigDialog.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step1.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step2.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step3.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step4.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step5.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="Step6.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="SysUserManagerDlg.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="TableSetBmpDialog.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="TableSetDialog.h">
+      <Filter>系统设置</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCdKey.h">
+      <Filter>用户认证</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterDialog.h">
+      <Filter>用户认证</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashDialog.h">
+      <Filter>登陆Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDBEnvDialog.h">
+      <Filter>配置DB连接</Filter>
+    </ClInclude>
+    <ClInclude Include="TreePropSheet\PropPageFrame.h">
+      <Filter>TrePropSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="TreePropSheet\PropPageFrameDefault.h">
+      <Filter>TrePropSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="TreePropSheet\TreePropSheet.h">
+      <Filter>TrePropSheet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\eventlogWarn.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OutlookDemo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OutlookDemoDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\OutlookDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

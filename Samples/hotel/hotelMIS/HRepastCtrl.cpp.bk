@@ -1,0 +1,65 @@
+/***********************************************************************
+ * Module:  HRepastCtrl.cpp
+ * Author:  babala
+ * Modified: 2005年4月22日 3:49:43
+ * Purpose: Implementation of the class HRepastCtrl
+ ***********************************************************************/
+#include "stdAfx.h"
+#include "HRepastCtrl.h"
+using namespace hotelMIS;
+////////////////////////////////////////////////////////////////////////
+// Name:       HRepastCtrl::HRepastCtrl(mysqlpp::Connection * pCon)
+// Purpose:    Implementation of HRepastCtrl::HRepastCtrl()
+// Parameters:
+// - pCon
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+HRepastCtrl::HRepastCtrl(mysqlpp::Connection * pCon)
+{
+   // TODO : implement
+	_pCon = pCon;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRepastCtrl::~HRepastCtrl()
+// Purpose:    Implementation of HRepastCtrl::~HRepastCtrl()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+HRepastCtrl::~HRepastCtrl()
+{
+   // TODO : implement
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRepastCtrl::getRepastState(int tableId, int roomId)
+// Purpose:    Implementation of HRepastCtrl::getRepastState()
+// Parameters:
+// - tableId
+// - roomId
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HRepastCtrl::getRepastState(int tableId, int roomId)
+{
+   // TODO : 返回餐桌状态
+	/*	0: 空桌
+		1: 就餐
+		2: 预定
+	*/
+	int re_state = 0;
+	try{
+		mysqlpp::Query query = _pCon->query();
+		query << "SELECT re_state FROM t_Repast WHERE table_id = " << tableId
+			<< " AND room_id = " << roomId;
+		mysqlpp::Result res = query.store();
+		if (!res.empty() ){
+			mysqlpp::Row row;
+			mysqlpp::Result::iterator it = res.begin();
+			row = *it;
+			re_state = row.lookup_by_name("re_state");
+		}
+	}mycatch();
+	return re_state;
+}

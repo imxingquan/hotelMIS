@@ -1,0 +1,12 @@
+alter table t_mcz modify czdate datetime
+
+CREATE TABLE `t_mzz` (
+  `id` int(11) NOT NULL auto_increment,
+  `sbh` varchar(10) default '',
+  `dbh` varchar(10) default '',
+  `zzmoney` float default '0',
+  `zzdate` datetime default '0000-00-00 00:00:00',
+  `remark` varchar(100) default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1; 
+

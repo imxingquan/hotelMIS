@@ -1,0 +1,3 @@
+rem 正在停止数据库服务......
+net stop H2
+mysqld --remove H2

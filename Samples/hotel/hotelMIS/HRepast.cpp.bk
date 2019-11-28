@@ -1,0 +1,36 @@
+/***********************************************************************
+ * Module:  HRepast.cpp
+ * Author:  babala
+ * Modified: 2005Äê4ÔÂ22ÈÕ 0:40:14
+ * Purpose: Implementation of the class HRepast
+ ***********************************************************************/
+#include "stdAfx.h"
+#include "HRepast.h"
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRepast::HRepast()
+// Purpose:    Implementation of HRepast::HRepast()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+using namespace hotelMIS;
+
+HRepast::HRepast()
+:account_id(""),
+  table_id(0),
+  cust_date(""),
+  cust_time(""),
+  room_id(0),
+  re_state(0)
+{
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HRepast::~HRepast()
+// Purpose:    Implementation of HRepast::~HRepast()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+HRepast::~HRepast()
+{
+   // TODO : implement
+}
