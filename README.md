@@ -6,7 +6,7 @@ restaurant management system   酒店餐饮管理系统
 In 2009,I started as a programmer and developed this food management system, and now I want to open source it.
 
 开发工具:
-   vs2003 c++  mysql4.13
+   vs2015 c++  mysql4.13
 
 HOTEL 目录提供了一个可运行的版本,以前是在WINXP下开发的. 我尝试在win10下,依然可以运行.   
 
